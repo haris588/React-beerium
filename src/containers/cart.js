@@ -24,9 +24,6 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
                             <Card.Text>
                                 Food pairing: {item.food_pairing.join(', ')}
                             </Card.Text>
-                            <Card.ContentDescription>
-                                {item.description}
-                            </Card.ContentDescription>
                             <Card.ABV position='relative'>ABV: {item.abv}%</Card.ABV>
                             <Card.IBU position='relative'>IBU: {item.ibu}</Card.IBU>
                             <Card.Icon src="./images/remove.png" onClick={() => removeFromCart(item.id)} />
