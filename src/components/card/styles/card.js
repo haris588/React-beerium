@@ -7,7 +7,7 @@ export const Container = styled.div`
    padding: 1em;
    margin: 0 auto;
 
-   @media(max-width: 920px){
+   @media(max-width: 620px){
       grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '40% 1fr')};
    }
 `
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem};
 
-   @media(max-width: 920px){
+   @media(max-width: 620px){
       font-size:0.8rem;
    }
 `
@@ -39,7 +39,7 @@ export const Image = styled.img`
    object-fit: contain;
    margin: 3em 0 1em 0;
 
-   @media(max-width: 720px){
+   @media(max-width: 620px){
       height: 150px;
    }
 `
@@ -48,7 +48,7 @@ export const Title = styled.h2`
    font-size: 1.2rem;
    padding: 0.5em;
 
-   @media(max-width: 920px){
+   @media(max-width: 620px){
       font-size: 1rem;
    }
 `
@@ -128,7 +128,7 @@ export const Button = styled.button`
    border:0;
    border-radius: 15px;
 
-   @media (max-width: 920px){
+   @media (max-width: 620px){
       font-size:0.8rem;
       padding: 0.8em 2.1em;
    }
