@@ -2,10 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
    display: grid;
-   grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '200px 2fr')};
-   grid-gap: 15px;
+   grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '200px 1fr')};
+   grid-gap: 8px;
    padding: 1em;
    margin: 0 auto;
+
+   @media(max-width: 920px){
+      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '80px 1fr')};
+   }
 `
 
 export const Wrapper = styled.div`
