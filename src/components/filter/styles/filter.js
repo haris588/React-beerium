@@ -19,26 +19,25 @@ export const Form = styled.form`
     align-items:center;
     position:relative;
     padding:1em;
-    font-size:1rem;
 
     @media (max-width: 920px){
         font-size:0.8rem;
     }
 `
 export const Label = styled.label`
-    font-size:0.9rem;
+    font-size:0.8rem;
 `
 
 export const Input = styled.input`
-    width:25px;
-    height:35px;
+    width:20px;
+    height:20px;
 
     @media (max-width: 920px){
         width:15px;
-        height:20px;
+        height:15px;
 }
 `
 export const Text = styled.p`
-    color:${({ color }) => (color === 'red' ? 'red' : 'green')};
-    font-size:1rem;
+    color:${({ color }) => (color === 'red' ? '#e1004f' : '#1bc700')};
+    font-size:0.9rem;
 `

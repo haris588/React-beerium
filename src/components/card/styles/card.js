@@ -8,7 +8,7 @@ export const Container = styled.div`
    margin: 0 auto;
 
    @media(max-width: 920px){
-      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '80px 1fr')};
+      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '40% 1fr')};
    }
 `
 
@@ -30,6 +30,7 @@ export const Wrapper = styled.div`
 `
 export const Text = styled.p`
    padding: 0.5em;
+   font-size:0.8rem;
 `
 
 export const Image = styled.img`

@@ -9,8 +9,8 @@ export function CardContainer({ items }) {
             {items.map(item => {
                 return (
                     <Card.Wrapper key={item.id}>
-                        <Card.ABV>ABV: {item.abv}%</Card.ABV>
-                        <Card.IBU>IBU: {item.ibu}</Card.IBU>
+                        <Card.ABV>ABV:{item.abv}%</Card.ABV>
+                        <Card.IBU>IBU:{item.ibu}</Card.IBU>
                         <Card.Image src={item.image_url ? item.image_url : "./images/placeholder.png"} />
                         <Card.Title>
                             {item.name}

@@ -55,7 +55,7 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
         <Filter>
             <Filter.Form>
                 <Filter.Text color='red'>
-                    Alcoholic Vol (ABV)
+                    Alcoholic Vol (ABV):
                 </Filter.Text>
 
                 <Filter.Input type="radio" value="all" name="filter-abv" checked={optionsABV === filterVars.showAll} onChange={handleABVChange} />
@@ -71,17 +71,17 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                 <Filter.Input type="radio" value="medium" name="filter-abv" checked={optionsABV === filterVars.mediumABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvMedium">
                     medium
-                    </Filter.Label>
+                </Filter.Label>
 
                 <Filter.Input type="radio" value="strong" name="filter-abv" checked={optionsABV === filterVars.strongABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvStrong">
                     strong
-                    </Filter.Label>
+                </Filter.Label>
             </Filter.Form>
 
             <Filter.Form>
                 <Filter.Text>
-                    Hoppiness  (IBU)
+                    Hoppiness (IBU):
                 </Filter.Text>
 
                 <Filter.Input type="radio" value="all" name="filter-ibu" checked={optionsIBU === filterVars.showAll} onChange={handleIBUChange} />
