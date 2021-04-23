@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
         color: #333333;
         background: rgba(253,251,249);
         font-size: 16px;
