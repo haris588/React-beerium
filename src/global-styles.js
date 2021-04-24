@@ -14,10 +14,11 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
         color: #333333;
-        background: rgba(253,251,249);
+        background: #D0D2E8;
         font-size: 16px;
         margin: 0 auto;
         padding:0;
+        position:relative;
         max-width:1200px;
         letter-spacing:1px;
     }

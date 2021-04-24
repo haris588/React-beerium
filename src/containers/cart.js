@@ -34,14 +34,14 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
 
             {cartItems.length >= 1 ?
 
-                <Card.Wrapper flexDirection="row" justifyContent='end' border='false'>
+                <div style={{display: 'flex', justifyContent: 'flex-end', background:'#3F4269', padding: '0 1em 1em 1em'}}>
                     <Card.Button onClick={emptyCart} color='red'>
                         empty cart
                     </Card.Button>
                     <Card.Button onClick={checkout}>
                         checkout
                     </Card.Button>
-                </Card.Wrapper>
+                </div> 
 
                 : null}
 

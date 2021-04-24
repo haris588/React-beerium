@@ -6,6 +6,7 @@ import { filterVars } from '../util/filterVars'
 export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, setOptionsABV, setOptionsIBU }) {
 
     const handleABVChange = (e) => {
+        e.preventDefault()
         const value = e.target.value;
 
         switch (value) {
@@ -25,10 +26,10 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
         }
 
         setPage(1)
-        getBeers()
     }
 
     const handleIBUChange = (e) => {
+        e.preventDefault()
         const value = e.target.value;
 
         switch (value) {
@@ -48,7 +49,6 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
         }
 
         setPage(1)
-        getBeers()
     }
 
     return (
@@ -61,7 +61,7 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                 <Filter.Input type="radio" value="all" name="filter-abv" checked={optionsABV === filterVars.showAll} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvAll">
                     all
-                    </Filter.Label>
+                </Filter.Label>
 
                 <Filter.Input type="radio" value="weak" name="filter-abv" checked={optionsABV === filterVars.weakABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvWeak">

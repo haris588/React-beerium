@@ -16,7 +16,7 @@ export function Store() {
     }, [page, optionsABV, optionsIBU])
 
     const getBeers = async () => {
-        let API_URL = `https://api.punkapi.com/v2/beers?page=${page}${optionsABV}${optionsIBU}`
+        let API_URL = `https://api.punkapi.com/v2/beers?page=${page}&per_page=15${optionsABV}${optionsIBU}`
         try {
             const promise = await fetch(API_URL);
             const beersData = await promise.json();
@@ -25,6 +25,7 @@ export function Store() {
         catch (e) {
             console.error(e)
         }
+        console.log(API_URL)
     }
 
     return (

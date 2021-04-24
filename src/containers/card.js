@@ -31,7 +31,9 @@ export function CardContainer({ items }) {
                             <Card.Text>
                                 Food pairing: {item.food_pairing.join(', ')}
                             </Card.Text>
+
                             {cartItems.some(i => i.id === item.id) ? <Card.Icon src="./images/remove.png" onClick={() => removeFromCart(item.id)} /> : <Card.Icon src="./images/cart.png" onClick={() => addToCart(item)} />}
+
                         </Card.Content>
                     </Card.Wrapper>
                 )

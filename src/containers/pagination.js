@@ -15,7 +15,7 @@ export function PaginationContainer({ page, setPage, items }) {
         <Pagination>
             <Pagination.Buttons onClick={handlePrevPage} disabled={page === 1 ? true : false}> prev </Pagination.Buttons>
             <Pagination.Page>{page}</Pagination.Page>
-            <Pagination.Buttons onClick={handleNextPage} disabled={items.length < 25 ? true : false}> next </Pagination.Buttons>
+            <Pagination.Buttons onClick={handleNextPage} disabled={items.length < 15 ? true : false}> next </Pagination.Buttons>
         </Pagination>
     )
 }

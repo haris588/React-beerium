@@ -5,16 +5,29 @@ export const Container = styled.div`
     justify-content: center;
     align-items:center;
     padding: 1em;
+    color: #525478;
 `
 
 export const Page = styled.span`
-    font-size:1rem;
     padding:1em;
+    font-weight: 700;
 `
 
 export const Buttons = styled.button`
-    background: #fff;
+    background: #525478;
+    border:0;
     border-radius:5px;
     padding:0.5em 1em;
     font-family:inherit;
+    color: rgba(255,255,255, 0.8);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        transform: scale(1.1)
+    }
+
+    &:disabled {
+        opacity: 0.2;
+    }
 `
