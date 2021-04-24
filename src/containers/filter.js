@@ -55,7 +55,7 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
         <Filter>
             <Filter.Form>
                 <Filter.Text color='red'>
-                    Alcoholic Vol (ABV):
+                    Alcohol (ABV):
                 </Filter.Text>
 
                 <Filter.Input type="radio" value="all" name="filter-abv" checked={optionsABV === filterVars.showAll} onChange={handleABVChange} />

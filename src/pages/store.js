@@ -25,7 +25,6 @@ export function Store() {
         catch (e) {
             console.error(e)
         }
-        console.log(API_URL)
     }
 
     return (

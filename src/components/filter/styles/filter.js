@@ -22,7 +22,7 @@ export const Form = styled.form`
   
 `
 export const Label = styled.label`
-    padding:0.3em;
+    padding:0.5em;
  
 `
 
@@ -40,4 +40,5 @@ export const Input = styled.input`
 `
 export const Text = styled.p`
     color:${({ color }) => (color === 'red' ? '#ff8101' : '#FFC95C')};
+    margin-right:1.5em;
 `
