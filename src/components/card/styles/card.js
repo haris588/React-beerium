@@ -124,6 +124,16 @@ export const Icon = styled.img`
       height:45px;
    }
 
+   @media (max-width:720px){
+      width:30px;
+      height:30px;
+
+      &:hover {
+         width:35px;
+         height:35px;
+      }
+   }
+
 `
 
 export const Button = styled.button`
