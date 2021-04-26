@@ -18,7 +18,6 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         margin: 0 auto;
         padding:0;
-        position:relative;
         max-width:1200px;
         letter-spacing:1px;
     }

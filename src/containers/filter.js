@@ -36,14 +36,14 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
             case 'all':
                 setOptionsIBU(filterVars.showAll)
                 break
-            case 'weak':
-                setOptionsIBU(filterVars.weakIBU)
+            case 'low':
+                setOptionsIBU(filterVars.lowIBU)
                 break
             case 'medium':
                 setOptionsIBU(filterVars.mediumIBU)
                 break
-            case 'strong':
-                setOptionsIBU(filterVars.strongIBU)
+            case 'high':
+                setOptionsIBU(filterVars.highIBU)
                 break
             default: break
         }
@@ -89,9 +89,9 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                         all
                 </Filter.Label>
 
-                <Filter.Label htmlFor="ibuWeak">
-                    <Filter.Input type="radio" value="weak" name="filter-ibu" checked={optionsIBU === filterVars.weakIBU} onChange={handleIBUChange} />
-                    weak
+                <Filter.Label htmlFor="ibuLow">
+                    <Filter.Input type="radio" value="low" name="filter-ibu" checked={optionsIBU === filterVars.lowIBU} onChange={handleIBUChange} />
+                    low
                 </Filter.Label>
 
                 <Filter.Label htmlFor="ibuMedium">
@@ -99,9 +99,9 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                     medium
                 </Filter.Label>
 
-                <Filter.Label htmlFor="ibuStrong">
-                    <Filter.Input type="radio" value="strong" name="filter-ibu" checked={optionsIBU === filterVars.strongIBU} onChange={handleIBUChange} />
-                    strong
+                <Filter.Label htmlFor="ibuHigh">
+                    <Filter.Input type="radio" value="high" name="filter-ibu" checked={optionsIBU === filterVars.highIBU} onChange={handleIBUChange} />
+                    high
                 </Filter.Label>
             </Filter.Form>
         </Filter>
