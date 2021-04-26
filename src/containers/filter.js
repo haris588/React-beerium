@@ -57,24 +57,24 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                 <Filter.Text color='red'>
                     Alcohol (ABV):
                 </Filter.Text>
-
-                <Filter.Input type="radio" value="all" name="filter-abv" checked={optionsABV === filterVars.showAll} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvAll">
+                    <Filter.Input type="radio" value="all" name="filter-abv" checked={optionsABV === filterVars.showAll} onChange={handleABVChange} />
+
                     all
                 </Filter.Label>
 
-                <Filter.Input type="radio" value="weak" name="filter-abv" checked={optionsABV === filterVars.weakABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvWeak">
+                    <Filter.Input type="radio" value="weak" name="filter-abv" checked={optionsABV === filterVars.weakABV} onChange={handleABVChange} />
                     weak
-                    </Filter.Label>
+                </Filter.Label>
 
-                <Filter.Input type="radio" value="medium" name="filter-abv" checked={optionsABV === filterVars.mediumABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvMedium">
+                    <Filter.Input type="radio" value="medium" name="filter-abv" checked={optionsABV === filterVars.mediumABV} onChange={handleABVChange} />
                     medium
                 </Filter.Label>
 
-                <Filter.Input type="radio" value="strong" name="filter-abv" checked={optionsABV === filterVars.strongABV} onChange={handleABVChange} />
                 <Filter.Label htmlFor="abvStrong">
+                    <Filter.Input type="radio" value="strong" name="filter-abv" checked={optionsABV === filterVars.strongABV} onChange={handleABVChange} />
                     strong
                 </Filter.Label>
             </Filter.Form>
@@ -84,26 +84,23 @@ export function FilterContainer({ getBeers, setPage, optionsIBU, optionsABV, set
                     Hoppiness (IBU):
                 </Filter.Text>
 
-                <Filter.Input type="radio" value="all" name="filter-ibu" checked={optionsIBU === filterVars.showAll} onChange={handleIBUChange} />
                 <Filter.Label htmlFor="ibuAll">
-                    all
+                    <Filter.Input type="radio" value="all" name="filter-ibu" checked={optionsIBU === filterVars.showAll} onChange={handleIBUChange} />
+                        all
                 </Filter.Label>
 
-
-                <Filter.Input type="radio" value="weak" name="filter-ibu" checked={optionsIBU === filterVars.weakIBU} onChange={handleIBUChange} />
                 <Filter.Label htmlFor="ibuWeak">
+                    <Filter.Input type="radio" value="weak" name="filter-ibu" checked={optionsIBU === filterVars.weakIBU} onChange={handleIBUChange} />
                     weak
                 </Filter.Label>
 
-
-                <Filter.Input type="radio" value="medium" name="filter-ibu" checked={optionsIBU === filterVars.mediumIBU} onChange={handleIBUChange} />
                 <Filter.Label htmlFor="ibuMedium">
+                    <Filter.Input type="radio" value="medium" name="filter-ibu" checked={optionsIBU === filterVars.mediumIBU} onChange={handleIBUChange} />
                     medium
                 </Filter.Label>
 
-
-                <Filter.Input type="radio" value="strong" name="filter-ibu" checked={optionsIBU === filterVars.strongIBU} onChange={handleIBUChange} />
                 <Filter.Label htmlFor="ibuStrong">
+                    <Filter.Input type="radio" value="strong" name="filter-ibu" checked={optionsIBU === filterVars.strongIBU} onChange={handleIBUChange} />
                     strong
                 </Filter.Label>
             </Filter.Form>

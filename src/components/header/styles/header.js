@@ -30,6 +30,7 @@ export const Text = styled.p`
 `
 export const Button = styled(Link)`   
     display:flex; 
+    position: relative;
     font-weight:700;
     border: 0;
     border-radius:15px;
@@ -40,9 +41,16 @@ export const Button = styled(Link)`
     text-transform: uppercase;
     margin-left:1em;
 
-    &:hover {
-        background: #9798ae;
-        transform: scale(1.1);
+    &:hover:after {
+        content:"";
+        position:absolute;
+        width:100%;
+        height:1px;
+        bottom:0;
+        background:#fff;
+        left:0;
+        opacity:0.5;
+        transform: scale(1.2);
     }
 
 `

@@ -119,6 +119,11 @@ export const Icon = styled.img`
    cursor:pointer;
    z-index:1000;
 
+   &:hover {
+      width:45px;
+      height:45px;
+   }
+
 `
 
 export const Button = styled.button`

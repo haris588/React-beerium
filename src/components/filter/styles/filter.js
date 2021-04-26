@@ -2,33 +2,40 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display:flex;
-    padding:0.8em;
+    padding:1em;
     font-weight:700;
     background: #3F4269;
     color:rgba(255,255,255,0.8);
     justify-content:space-evenly;
     border-bottom: 2px solid #fff;
+    
     @media (max-width: 920px){
         display:flex;
         flex-wrap:wrap;
-        font-size:0.7rem;
+        font-size:0.8rem;
+        justify-content:space-between;
     }
 `
 export const Form = styled.form`
     display:flex;
-    position:relative;
-    padding:0.8em;
-    align-items:center;
-  
+    justify-items: space-evenly;
+
+    @media (max-width:920px){
+        flex-direction:column;
+    }
 `
 export const Label = styled.label`
-    padding:0.5em;
- 
+display:flex;
+align-items:center;
+padding:0.2em 0.8em;
+    text-transform: uppercase;
+    font-size:0.8rem;
 `
 
 export const Input = styled.input`
     width:20px;
     height:20px;
+    margin-right:1em;
     &:hover {
         transform: scale(1.2)
     }
@@ -39,6 +46,6 @@ export const Input = styled.input`
 }
 `
 export const Text = styled.p`
+padding:0.2em 0.8em;
     color:${({ color }) => (color === 'red' ? '#ff8101' : '#FFC95C')};
-    margin-right:1.5em;
 `
