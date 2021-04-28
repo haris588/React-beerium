@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
-        color: #333333;
+        color: #333;
         background: #fff;
         font-size: 16px;
         margin: 0 auto;

@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items:center;
     padding: 1em;
     color: #525478;
+   
 `
 
 export const Page = styled.span`

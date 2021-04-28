@@ -6,9 +6,9 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
     const { checkout, loading } = useContext(Context)
 
 
-    return cartItems.length === 0 ? (<Card><Card.Text>Your cart is empty.</Card.Text></Card>) : (
+    return cartItems.length === 0 ? (<Card><Card.Text style={{color: '#FFF'}}>Your cart is empty.</Card.Text></Card>) : (
         <>
-            {loading ? <Card><Card.Title>Loading...</Card.Title></Card> : cartItems.map(item => {
+            {loading ? <Card><Card.Title style={{color: '#FFF'}}>Loading...</Card.Title></Card> : cartItems.map(item => {
                 return (
                     <Card key={item.id}>
                         <Card.Wrapper >
@@ -34,7 +34,7 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
 
             {cartItems.length >= 1 ?
 
-                <div style={{display: 'flex', justifyContent: 'flex-end', background:'#3F4269', padding: '0 1em 1em 1em'}}>
+                <div style={{display: 'flex', justifyContent: 'flex-end', background:'#1174a6', padding: '0 1em 1em 1em'}}>
                     <Card.Button onClick={emptyCart} color='red'>
                         empty cart
                     </Card.Button>

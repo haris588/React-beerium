@@ -19,11 +19,10 @@ export const Wrapper = styled.div`
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    border: ${({ border }) => (border === 'false' ? 'none' : '1px solid #fff')};
    border-radius: 15px;
-   background:#f2f1f1;
+   background:#cfe3ed;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
-
    @media(max-width: 620px){
       font-size:0.8rem;
    }
@@ -31,6 +30,7 @@ export const Wrapper = styled.div`
 export const Text = styled.p`
    padding: 0.5em;
    font-size:0.9rem;
+   
 `
 
 export const Image = styled.img`
@@ -56,6 +56,7 @@ export const Title = styled.h2`
 export const Tagline = styled.p`
    font-style: italic;
    padding: 0.5em;
+
 
 `
 
@@ -83,8 +84,7 @@ export const Content = styled.div`
    padding: 1em;
    width: 100%;
    height: 100%;
-   background: #9798ae;
-   color; color:rgba(255,255,255, 1);
+   background: #b7d5e4;
    overflow: auto;
    cursor: pointer;
    border-radius: 13px;
