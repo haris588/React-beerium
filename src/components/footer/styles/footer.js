@@ -5,7 +5,7 @@ export const Container = styled.footer`
   border-top:2px solid #fff;
   color: #fff;
   text-align: center;
-  background: #3F4269;
+  background: #1174a6;
 `
 
 export const Text = styled.p`

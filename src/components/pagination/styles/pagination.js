@@ -14,7 +14,7 @@ export const Page = styled.span`
 `
 
 export const Buttons = styled.button`
-    background: #525478;
+    background: #1174a6;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;

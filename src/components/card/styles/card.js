@@ -5,8 +5,8 @@ export const Container = styled.div`
    grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '200px 1fr')};
    grid-gap: 8px;
    padding: 1em;
-   color:rgba(255,255,255, 0.8);
-   background: #3F4269;
+   color:#333;
+   background: #1174a6;
    @media(max-width: 620px){
       grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '40% 1fr')};
    }
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    border: ${({ border }) => (border === 'false' ? 'none' : '1px solid #fff')};
    border-radius: 15px;
-   background:#525478;
+   background:#f2f1f1;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
@@ -31,7 +31,6 @@ export const Wrapper = styled.div`
 export const Text = styled.p`
    padding: 0.5em;
    font-size:0.9rem;
-   color:#fff;
 `
 
 export const Image = styled.img`
@@ -57,6 +56,7 @@ export const Title = styled.h2`
 export const Tagline = styled.p`
    font-style: italic;
    padding: 0.5em;
+
 `
 
 export const ABV = styled.span`

@@ -4,8 +4,8 @@ export const Container = styled.div`
     display:flex;
     padding:1em;
     font-weight:700;
-    background: #3F4269;
-    color:rgba(255,255,255,0.8);
+    background: #1174a6;
+    color:rgba(255,255,255,0.9);
     justify-content:space-evenly;
     border-bottom: 2px solid #fff;
     
