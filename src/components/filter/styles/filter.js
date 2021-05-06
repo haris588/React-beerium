@@ -4,7 +4,7 @@ export const Container = styled.div`
     display:flex;
     padding:1em;
     font-weight:700;
-    background: #1174a6;
+    background: #323232;
     color:rgba(255,255,255,0.9);
     justify-content:space-evenly;
     border-bottom: 2px solid #fff;
@@ -47,5 +47,5 @@ export const Input = styled.input`
 `
 export const Text = styled.p`
 padding:0.2em 0.8em;
-    color:${({ color }) => (color === 'red' ? '#ff8101' : '#FFC95C')};
+    color:${({ color }) => (color === 'red' ? '#f44f26' : '#42e733')};
 `

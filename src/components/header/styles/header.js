@@ -7,7 +7,7 @@ export const Container = styled.header`
     padding:1em;
     align-items:center;
     color:rgba(255,255,255,1);
-    background: #1174a6;
+    background: #323232;
     border-bottom: 2px solid #fff;
 `
 export const Group = styled.div`      

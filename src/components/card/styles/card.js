@@ -6,7 +6,7 @@ export const Container = styled.div`
    grid-gap: 8px;
    padding: 1em;
    color:#333;
-   background: #1174a6;
+   background: #323232;
    @media(max-width: 620px){
       grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '40% 1fr')};
    }
@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    border: ${({ border }) => (border === 'false' ? 'none' : '1px solid #fff')};
    border-radius: 15px;
-   background:#cfe3ed;
+   background:#e5e5e5;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
@@ -62,7 +62,7 @@ export const Tagline = styled.p`
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #ff8101;
+   color: #f44f26;
    left:0;
    top:0;
    padding:1em;
@@ -70,7 +70,7 @@ export const ABV = styled.span`
 `
 export const IBU = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #FFC95C;
+   color: #1db80f;
    padding:1em;
    right:0;
    top:0;
@@ -84,7 +84,7 @@ export const Content = styled.div`
    padding: 1em;
    width: 100%;
    height: 100%;
-   background: #b7d5e4;
+   background: #ccc;
    overflow: auto;
    cursor: pointer;
    border-radius: 13px;

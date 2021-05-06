@@ -15,7 +15,8 @@ export const Page = styled.span`
 `
 
 export const Buttons = styled.button`
-    background: #1174a6;
+display:inline-block;
+    background: #323232;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;
@@ -30,5 +31,6 @@ export const Buttons = styled.button`
 
     &:disabled {
         opacity: 0.2;
+        transform: scale(1)
     }
 `
