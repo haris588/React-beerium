@@ -12,7 +12,7 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
                 return (
                     <Card key={item.id}>
                         <Card.Wrapper >
-                            <Card.Image src={item.image_url ? item.image_url : "./images/placeholder.png"} />
+                            <Card.Image src={item.image_url ? item.image_url : "./images/placeholder.png"} alt="beer" />
                         </Card.Wrapper>
                         <Card.Wrapper textAlign="left" >
                             <Card.Title>
@@ -26,7 +26,7 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
                             </Card.Text>
                             <Card.ABV position='relative'>ABV: {item.abv}%</Card.ABV>
                             <Card.IBU position='relative'>IBU: {item.ibu}</Card.IBU>
-                            <Card.Icon src="./images/remove.png" onClick={() => removeFromCart(item.id)} />
+                            <Card.Icon src="./images/remove.png" onClick={() => removeFromCart(item.id)} alt="add to cart" />
                         </Card.Wrapper>
                     </Card>
                 )

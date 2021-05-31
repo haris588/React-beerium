@@ -49,5 +49,5 @@ export const Input = styled.input`
 export const Text = styled.p`
 padding:0.2em 0.8em;
 font-weight: 700;
-    color:${({ color }) => (color === 'red' ? '#f03d3d' : '#1ca11e')};
+    color:${({ color }) => (color === 'red' ? '#d22' : '#32a505')};
 `

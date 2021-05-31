@@ -19,7 +19,6 @@ export const Wrapper = styled.div`
    position: relative;
    flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
-  
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
    border-radius: 15px;
    background:#e5e5e5;
@@ -65,7 +64,7 @@ export const Tagline = styled.p`
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #f03d3d;
+   color: #d22;
    left:0;
    top:0;
    padding:1em;
@@ -73,7 +72,7 @@ export const ABV = styled.span`
 `
 export const IBU = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #1ca11e;
+   color: #32a505;
    padding:1em;
    right:0;
    top:0;
