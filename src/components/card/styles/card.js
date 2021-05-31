@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
    flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-   border-radius: 15px;
+   border-radius:7px;
    background:#e5e5e5;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
@@ -89,7 +89,7 @@ export const Content = styled.div`
    background: #cccccc;
    overflow: auto;
    cursor: pointer;
-   border-radius: 13px;
+   border-radius:7px;
    text-align: left;
    opacity: 0;
    transition: opacity .8s ease;
