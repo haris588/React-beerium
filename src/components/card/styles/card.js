@@ -2,13 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
    display: grid;
-   grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '200px 1fr')};
+   grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(350px, 1fr))' : '200px 1fr')};
    grid-gap: 8px;
    padding: 1em;
    color:#333;
-   background: #323232;
+   background: #e5e5e5;
+   margin-bottom:1em;
+   border-radius:7px;
    @media(max-width: 620px){
-      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '40% 1fr')};
+      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(350px, 1fr))' : '40% 1fr')};
    }
 `
 
@@ -17,7 +19,8 @@ export const Wrapper = styled.div`
    position: relative;
    flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
-   border: ${({ border }) => (border === 'false' ? 'none' : '1px solid #fff')};
+  
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
    border-radius: 15px;
    background:#e5e5e5;
    padding: 1em;
@@ -62,7 +65,7 @@ export const Tagline = styled.p`
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #f44f26;
+   color: #f03d3d;
    left:0;
    top:0;
    padding:1em;
@@ -70,7 +73,7 @@ export const ABV = styled.span`
 `
 export const IBU = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #1db80f;
+   color: #1ca11e;
    padding:1em;
    right:0;
    top:0;
@@ -84,7 +87,7 @@ export const Content = styled.div`
    padding: 1em;
    width: 100%;
    height: 100%;
-   background: #ccc;
+   background: #cccccc;
    overflow: auto;
    cursor: pointer;
    border-radius: 13px;

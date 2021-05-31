@@ -6,9 +6,10 @@ export const Container = styled.header`
     justify-content: space-between;
     padding:1em;
     align-items:center;
-    color:rgba(255,255,255,1);
-    background: #323232;
-    border-bottom: 2px solid #fff;
+    color:#333;
+    background: #e5e5e5;
+    border-radius:7px;
+    margin-bottom: 1em;
 `
 export const Group = styled.div`      
     display:flex;
@@ -34,22 +35,14 @@ export const Button = styled(Link)`
     font-weight:700;
     border: 0;
     border-radius:15px;
-    color:#fff;
+    color:#333;
     padding: 8px 17px;
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
     margin-left:1em;
 
-    &:hover:after {
-        content:"";
-        position:absolute;
-        width:100%;
-        height:1px;
-        bottom:0;
-        background:#fff;
-        left:0;
-        opacity:0.5;
+    &:hover {
         transform: scale(1.2);
     }
 

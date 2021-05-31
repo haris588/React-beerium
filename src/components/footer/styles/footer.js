@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
   padding:1em;
-  border-top:2px solid #fff;
-  color: #fff;
+  border-radius:7px;
+  color: #333;
   text-align: center;
-  background: #323232;
+  background: #e5e5e5;
+  margin-top: 1em;
 `
 
 export const Text = styled.p`

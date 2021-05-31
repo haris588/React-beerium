@@ -4,11 +4,11 @@ export const Container = styled.div`
     display:flex;
     padding:1em;
     font-weight:700;
-    background: #323232;
-    color:rgba(255,255,255,0.9);
+    background: #e5e5e5;
+    color:#333;
+    border-radius:7px;
     justify-content:space-evenly;
-    border-bottom: 2px solid #fff;
-    
+    margin: 1em 0;
     @media (max-width: 920px){
         display:flex;
         flex-wrap:wrap;
@@ -36,6 +36,7 @@ export const Input = styled.input`
     width:20px;
     height:20px;
     margin-right:1em;
+    cursor: pointer;
     &:hover {
         transform: scale(1.2)
     }
@@ -47,5 +48,6 @@ export const Input = styled.input`
 `
 export const Text = styled.p`
 padding:0.2em 0.8em;
-    color:${({ color }) => (color === 'red' ? '#f44f26' : '#42e733')};
+font-weight: 700;
+    color:${({ color }) => (color === 'red' ? '#f03d3d' : '#1ca11e')};
 `

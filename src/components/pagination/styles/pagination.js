@@ -6,23 +6,26 @@ export const Container = styled.div`
     align-items:center;
     padding: 1em;
     color: #525478;
+    margin-top:1em;
    
 `
 
 export const Page = styled.span`
     padding:1em;
     font-weight: 700;
+    color:#fff;
 `
 
 export const Buttons = styled.button`
 display:inline-block;
-    background: #323232;
+    background: #e5e5e5;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;
     font-family:inherit;
-    color: rgba(255,255,255, 0.8);
+    color: #333;
     font-weight: 700;
+    cursor: pointer;
     text-transform: uppercase;
 
     &:hover {
@@ -31,6 +34,7 @@ display:inline-block;
 
     &:disabled {
         opacity: 0.2;
-        transform: scale(1)
+        transform: scale(1);
+        cursor: not-allowed;
     }
 `
