@@ -8,7 +8,7 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
 
     return cartItems.length === 0 ? (<Card><Card.Text style={{color: '#333'}}>Your cart is empty.</Card.Text></Card>) : (
         <>
-            {loading ? <Card><Card.Title style={{color: '#FFF'}}>Loading...</Card.Title></Card> : cartItems.map(item => {
+            {loading ? <Card><Card.Title style={{color: '#333'}}>Loading...</Card.Title></Card> : cartItems.map(item => {
                 return (
                     <Card key={item.id}>
                         <Card.Wrapper >

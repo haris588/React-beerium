@@ -10,7 +10,7 @@ export const Container = styled.div`
    margin-bottom:1em;
    border-radius:7px;
    @media(max-width: 620px){
-      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(350px, 1fr))' : '40% 1fr')};
+      grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(100%, 1fr))' : '40% 1fr')};
    }
 `
 

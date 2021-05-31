@@ -10,6 +10,7 @@ export const Container = styled.header`
     background: #e5e5e5;
     border-radius:7px;
     margin-bottom: 1em;
+    font-size:1rem;
 `
 export const Group = styled.div`      
     display:flex;
@@ -46,6 +47,10 @@ export const Button = styled(Link)`
         transform: scale(1.2);
     }
 
+    @media (max-width:600px){
+        padding: 4px 8px;
+        font-size:0.9rem;
+    }
 `
 
 
