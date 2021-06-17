@@ -18,7 +18,7 @@ export const Page = styled.span`
 
 export const Buttons = styled.button`
 display:inline-block;
-    background: #e5e5e5;
+    background: #f4d986;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;
@@ -29,7 +29,7 @@ display:inline-block;
     text-transform: uppercase;
 
     &:hover {
-        transform: scale(1.1)
+        transform: scale(1.02)
     }
 
     &:disabled {

@@ -7,7 +7,7 @@ export const Container = styled.header`
     padding:1em;
     align-items:center;
     color:#333;
-    background: #e5e5e5;
+    background: #f4d986;
     border-radius:7px;
     margin-bottom: 1em;
     font-size:1rem;
@@ -28,7 +28,7 @@ export const Title = styled.h1`
 `
 
 export const Text = styled.p`
-   color: red;
+   color: #e11005;
 `
 export const Button = styled(Link)`   
     display:flex; 

@@ -5,7 +5,7 @@ export const Container = styled.footer`
   border-radius:7px;
   color: #333;
   text-align: center;
-  background: #e5e5e5;
+  background: #f4d986;
   margin-top: 1em;
 `
 

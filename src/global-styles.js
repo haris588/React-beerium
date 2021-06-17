@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
         color: #333;
-        background: #40403F;
+        background: #fff;
         font-size: 16px;
         margin: 0 auto;
         padding:0;

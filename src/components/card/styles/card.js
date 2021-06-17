@@ -6,7 +6,7 @@ export const Container = styled.div`
    grid-gap: 8px;
    padding: 1em;
    color:#333;
-   background: #e5e5e5;
+   background: #f4d986;
    margin-bottom:1em;
    border-radius:7px;
    @media(max-width: 620px){
@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
    border-radius:7px;
-   background:#e5e5e5;
+   background:#fcfbee;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
@@ -64,7 +64,7 @@ export const Tagline = styled.p`
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #d22;
+   color: #e11005;
    left:0;
    top:0;
    padding:1em;
@@ -72,7 +72,7 @@ export const ABV = styled.span`
 `
 export const IBU = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #32a505;
+   color: #01a314;
    padding:1em;
    right:0;
    top:0;
@@ -86,7 +86,7 @@ export const Content = styled.div`
    padding: 1em;
    width: 100%;
    height: 100%;
-   background: #cccccc;
+   background: #f9ecc2;
    overflow: auto;
    cursor: pointer;
    border-radius:7px;
@@ -141,7 +141,7 @@ export const Icon = styled.img`
 export const Button = styled.button`
    display:block;
    padding: 1em 2.5em;
-   background: ${({ color }) => (color === 'red' ? '#a7a79e' : '#7da705')};
+   background: ${({ color }) => (color === 'red' ? '#F00D0D' : '#50D00F')};
    margin-left:1em;
    font-family:inherit;
    text-transform: uppercase;
@@ -152,7 +152,7 @@ export const Button = styled.button`
    border-radius: 15px;
    
    &:hover {
-      transform: scale(1.1)
+      transform: scale(1.02)
    }
    @media (max-width: 620px){
       font-size:0.8rem;

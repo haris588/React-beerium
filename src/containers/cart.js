@@ -34,7 +34,7 @@ export function CartContainer({ cartItems, removeFromCart, emptyCart }) {
 
             {cartItems.length >= 1 ?
 
-                <div style={{display: 'flex', justifyContent: 'flex-end', background:'#40403F', padding: '1em 1em 1em 1em', marginTop:'1em'}}>
+                <div style={{display: 'flex', justifyContent: 'flex-end', background:'#fff', padding: '1em 1em 1em 1em', marginTop:'1em'}}>
                     <Card.Button onClick={emptyCart} color='red'>
                         empty cart
                     </Card.Button>
