@@ -7,7 +7,7 @@ export const Container = styled.header`
     padding:1em;
     align-items:center;
     color:#fff;
-    background: #332f2f;
+    background: #3c4b4d;
     margin-bottom: 0.5em;
     font-size:1rem;
 `

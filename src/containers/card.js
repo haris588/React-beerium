@@ -11,7 +11,7 @@ export function CardContainer({ items }) {
                     <Card.Wrapper key={item.id}>
                         <Card.ABV>ABV:{item.abv}%</Card.ABV>
                         <Card.IBU>IBU:{item.ibu}</Card.IBU>
-                        <Card.Image src={item.image_url ? item.image_url : "./images/placeholder.png"} />
+                        <Card.Image src={item.image_url ? item.image_url : "./images/placeholder.png"}  alt="beer"/>
                         <Card.Title>
                             {item.name}
                         </Card.Title>
@@ -32,7 +32,7 @@ export function CardContainer({ items }) {
                                 Food pairing: {item.food_pairing.join(', ')}
                             </Card.Text>
 
-                            {cartItems.some(i => i.id === item.id) ? <Card.Icon src="./images/remove.png" onClick={() => removeFromCart(item.id)} /> : <Card.Icon src="./images/cart.png" onClick={() => addToCart(item)} />}
+                            {cartItems.some(i => i.id === item.id) ? <Card.Icon src="./images/remove.png" alt="remove from cart" onClick={() => removeFromCart(item.id)} /> : <Card.Icon src="./images/cart.png" alt="add to cart" onClick={() => addToCart(item)} />}
 
                         </Card.Content>
                     </Card.Wrapper>

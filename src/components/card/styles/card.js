@@ -6,7 +6,7 @@ export const Container = styled.div`
    grid-gap: 8px;
    padding: 1em;
    color:#333;
-   background: #332f2f;
+   background: #3c4b4d;
    margin-bottom:1em;
 
    @media(max-width: 620px){
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
    flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-   background:#f2eded;
+   background:#ebeded;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
@@ -60,7 +60,7 @@ export const Tagline = styled.p`
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #dd225b;
+   color: #FF8D00;
    left:0;
    top:0;
    padding:1em;
