@@ -18,7 +18,7 @@ export const Page = styled.span`
 
 export const Buttons = styled.button`
     display:inline-block;
-    background: #332f2f;
+    background: #3c4b4d;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;
