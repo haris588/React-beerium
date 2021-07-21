@@ -8,8 +8,7 @@ export const Container = styled.header`
     align-items:center;
     color:#fff;
     background: #332f2f;
-    border-radius:7px;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     font-size:1rem;
 `
 export const Group = styled.div`      

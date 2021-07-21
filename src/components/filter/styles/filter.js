@@ -6,9 +6,8 @@ export const Container = styled.div`
     font-weight:700;
     background: #332f2f;
     color:#fff;
-    border-radius:7px;
     justify-content:space-evenly;
-    margin: 1em 0;
+    margin: 0.5em 0;
     @media (max-width: 920px){
         display:flex;
         flex-wrap:wrap;

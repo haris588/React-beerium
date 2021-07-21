@@ -8,7 +8,7 @@ export const Container = styled.div`
    color:#333;
    background: #332f2f;
    margin-bottom:1em;
-   border-radius:7px;
+
    @media(max-width: 620px){
       grid-template-columns: ${({ gridType }) => (gridType === 'list' ? 'repeat(auto-fill, minmax(100%, 1fr))' : '40% 1fr')};
    }
@@ -20,7 +20,6 @@ export const Wrapper = styled.div`
    flex-direction: ${({ flexDirection }) => (flexDirection === 'row' ? 'row' : 'column')};
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-   border-radius:7px;
    background:#f2eded;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};

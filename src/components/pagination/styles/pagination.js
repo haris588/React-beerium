@@ -13,11 +13,11 @@ export const Container = styled.div`
 export const Page = styled.span`
     padding:1em;
     font-weight: 700;
-    color:#fff;
+    color:#332f2f;
 `
 
 export const Buttons = styled.button`
-display:inline-block;
+    display:inline-block;
     background: #332f2f;
     border:0;
     border-radius:5px;
