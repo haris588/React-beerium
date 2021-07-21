@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.footer`
   padding:1em;
   border-radius:7px;
-  color: #333;
+  color: #fff;
   text-align: center;
-  background: #f4d986;
+  background: #332f2f;
   margin-top: 1em;
 `
 

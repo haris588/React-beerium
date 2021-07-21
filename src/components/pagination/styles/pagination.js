@@ -5,7 +5,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items:center;
     padding: 1em;
-    color: #525478;
+    color: #332f2f;
     margin-top:1em;
    
 `
@@ -18,12 +18,12 @@ export const Page = styled.span`
 
 export const Buttons = styled.button`
 display:inline-block;
-    background: #f4d986;
+    background: #332f2f;
     border:0;
     border-radius:5px;
     padding:0.5em 1em;
     font-family:inherit;
-    color: #333;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;

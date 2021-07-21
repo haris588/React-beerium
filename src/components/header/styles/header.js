@@ -6,8 +6,8 @@ export const Container = styled.header`
     justify-content: space-between;
     padding:1em;
     align-items:center;
-    color:#333;
-    background: #f4d986;
+    color:#fff;
+    background: #332f2f;
     border-radius:7px;
     margin-bottom: 1em;
     font-size:1rem;
@@ -36,7 +36,7 @@ export const Button = styled(Link)`
     font-weight:700;
     border: 0;
     border-radius:15px;
-    color:#333;
+    color:#fff;
     padding: 8px 17px;
     cursor: pointer;
     text-decoration: none;

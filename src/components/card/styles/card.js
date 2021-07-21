@@ -6,7 +6,7 @@ export const Container = styled.div`
    grid-gap: 8px;
    padding: 1em;
    color:#333;
-   background: #f4d986;
+   background: #332f2f;
    margin-bottom:1em;
    border-radius:7px;
    @media(max-width: 620px){
@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
    justify-content: ${({ justifyContent }) => (justifyContent === 'end' ? 'flex-end' : 'space-evenly')};
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
    border-radius:7px;
-   background:#fcfbee;
+   background:#f2eded;
    padding: 1em;
    text-align: ${({ textAlign }) => (textAlign === 'left' ? 'left' : 'center')};
    font-size: 1rem;
@@ -32,7 +32,6 @@ export const Wrapper = styled.div`
 export const Text = styled.p`
    padding: 0.5em;
    font-size:0.9rem;
-   
 `
 
 export const Image = styled.img`
@@ -58,13 +57,11 @@ export const Title = styled.h2`
 export const Tagline = styled.p`
    font-style: italic;
    padding: 0.5em;
-
-
 `
 
 export const ABV = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #e11005;
+   color: #dd225b;
    left:0;
    top:0;
    padding:1em;
@@ -72,7 +69,7 @@ export const ABV = styled.span`
 `
 export const IBU = styled.span`
    position: ${({ position }) => (position === 'relative' ? 'relative' : 'absolute')};
-   color: #01a314;
+   color: #28b470 ;
    padding:1em;
    right:0;
    top:0;
@@ -86,7 +83,7 @@ export const Content = styled.div`
    padding: 1em;
    width: 100%;
    height: 100%;
-   background: #f9ecc2;
+   background: #f2eded;
    overflow: auto;
    cursor: pointer;
    border-radius:7px;
@@ -141,7 +138,7 @@ export const Icon = styled.img`
 export const Button = styled.button`
    display:block;
    padding: 1em 2.5em;
-   background: ${({ color }) => (color === 'red' ? '#F00D0D' : '#50D00F')};
+   background: ${({ color }) => (color === 'red' ? '#dd225b' : '#28b470')};
    margin-left:1em;
    font-family:inherit;
    text-transform: uppercase;

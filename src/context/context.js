@@ -24,7 +24,7 @@ export function ContextProvider({ children }) {
         setTimeout(() => {
             emptyCart()
             setLoading(false)
-        }, 3000)
+        }, 2000)
     }
 
     return (

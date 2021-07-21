@@ -4,8 +4,8 @@ export const Container = styled.div`
     display:flex;
     padding:1em;
     font-weight:700;
-    background: #f4d986;
-    color:#333;
+    background: #332f2f;
+    color:#fff;
     border-radius:7px;
     justify-content:space-evenly;
     margin: 1em 0;
@@ -25,9 +25,9 @@ export const Form = styled.form`
     }
 `
 export const Label = styled.label`
-display:flex;
-align-items:center;
-padding:0.2em 0.8em;
+    display:flex;
+    align-items:center;
+    padding:0.2em 0.8em;
     text-transform: uppercase;
     font-size:0.8rem;
 `
@@ -49,5 +49,5 @@ export const Input = styled.input`
 export const Text = styled.p`
 padding:0.2em 0.8em;
 font-weight: 700;
-    color:${({ color }) => (color === 'red' ? '#e11005' : '#01a314')};
+    color:${({ color }) => (color === 'red' ? '#dd225b' : '#28b470')};
 `
